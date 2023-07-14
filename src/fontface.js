@@ -148,7 +148,7 @@ goog.scope(function () {
     var src = null;
 
     if (this.loadStatus === FontFaceLoadStatus.LOADED) {
-      var bytes = new Uint8Array(this.buffer),
+      var bytes = new Uint32Array(this.buffer),
           tmp = '';
 
       for (var i = 0; i < bytes.length; i++) {
